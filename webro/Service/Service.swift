@@ -9,8 +9,8 @@
 import Alamofire
 import ObjectMapper
 
+// Hero Mode On:
 fileprivate enum C {
-    
     static let shouldLogRequests = true
 }
 
@@ -20,7 +20,7 @@ class Service {
     
     private init() {}
     
-    private let baseURL = URL(string: "https://webro.herokuapp.com/api/")!
+    private let baseURL = URL(string: "http://192.168.30.233:8081/api/")!//!webro.herokuapp.com/api/")!
     private let defaultParameters: [String : Any] = [:]
     private let defaultHeaders: [String : String] = [:]
     
@@ -83,3 +83,4 @@ class Service {
         return (data: json, error: nil)
     }
 }
+// Hero Mode Off:

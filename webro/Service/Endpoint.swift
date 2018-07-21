@@ -11,6 +11,7 @@ import Foundation
 enum Endpoint {
     
     case login(email: String, password: String)
+    case tasks
     
     var request: Request {
         
@@ -20,6 +21,8 @@ enum Endpoint {
             let parameters = ["email": email,
                               "password": password]
             return Request(path: "login", method: .post, parameters: parameters)
+        case let .tasks:
+            return Request(path: "tasks", method: .get, parameters: [:])
         }
     }
 }

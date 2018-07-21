@@ -32,6 +32,13 @@
 		CF1F2A5C2102DA0B00BE4BA3 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A5B2102DA0B00BE4BA3 /* NSAttributedStringExtension.swift */; };
 		CF1F2A5E2102EDB900BE4BA3 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A5D2102EDB900BE4BA3 /* UserDefaultsExtension.swift */; };
 		CF1F2A622102EF5100BE4BA3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A612102EF5100BE4BA3 /* UIViewControllerExtension.swift */; };
+		CF1F2A642102FC4F00BE4BA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A632102FC4F00BE4BA3 /* HomeViewController.swift */; };
+		CF1F2A67210300E500BE4BA3 /* mapstyle.json in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2A66210300E500BE4BA3 /* mapstyle.json */; };
+		CF1F2A6C210302FE00BE4BA3 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A6B210302FE00BE4BA3 /* TaskTableViewCell.swift */; };
+		CF1F2A6E2103036500BE4BA3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A6D2103036500BE4BA3 /* UITableViewExtension.swift */; };
+		CF1F2A702103039900BE4BA3 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */; };
+		CF1F2A722103116D00BE4BA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A712103116D00BE4BA3 /* Task.swift */; };
+		CF1F2A742103192B00BE4BA3 /* TasksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		CF1F2A5B2102DA0B00BE4BA3 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		CF1F2A5D2102EDB900BE4BA3 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		CF1F2A612102EF5100BE4BA3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CF1F2A632102FC4F00BE4BA3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF1F2A66210300E500BE4BA3 /* mapstyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapstyle.json; sourceTree = "<group>"; };
+		CF1F2A6B210302FE00BE4BA3 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		CF1F2A6D2103036500BE4BA3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		CF1F2A712103116D00BE4BA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksResponse.swift; sourceTree = "<group>"; };
 		DF592C59461F7FC8ACBEA7FF /* Pods-webro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.release.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.release.xcconfig"; sourceTree = "<group>"; };
 		EBCD7A525C98E9BDED86BF6A /* Pods-webro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +126,8 @@
 				CF1F2A542102D07700BE4BA3 /* Extension */,
 				CF1F2A2C2102BDE400BE4BA3 /* Common */,
 				CF1F2A232102BB7E00BE4BA3 /* Service */,
+				CF1F2A68210302C900BE4BA3 /* Scenes */,
 				CF1F2A1021029A2C00BE4BA3 /* AppDelegate.swift */,
-				CF1F2A352102C18400BE4BA3 /* SplashViewController.swift */,
-				CF1F2A372102C55B00BE4BA3 /* LoginViewController.swift */,
 				CF1F2A1421029A2C00BE4BA3 /* Main.storyboard */,
 				CF1F2A1721029A3000BE4BA3 /* Assets.xcassets */,
 				CF1F2A1921029A3000BE4BA3 /* LaunchScreen.storyboard */,
@@ -150,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1F2A302102BF1000BE4BA3 /* EmptyResponse.swift */,
+				CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -158,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1F2A332102C00200BE4BA3 /* User.swift */,
+				CF1F2A712103116D00BE4BA3 /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +196,7 @@
 		CF1F2A3F2102CE7D00BE4BA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF1F2A66210300E500BE4BA3 /* mapstyle.json */,
 				CF1F2A402102CE8900BE4BA3 /* Fonts */,
 			);
 			name = "Supporting Files";
@@ -213,8 +229,37 @@
 				CF1F2A5B2102DA0B00BE4BA3 /* NSAttributedStringExtension.swift */,
 				CF1F2A5D2102EDB900BE4BA3 /* UserDefaultsExtension.swift */,
 				CF1F2A612102EF5100BE4BA3 /* UIViewControllerExtension.swift */,
+				CF1F2A6D2103036500BE4BA3 /* UITableViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CF1F2A68210302C900BE4BA3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2A6A210302DB00BE4BA3 /* Home */,
+				CF1F2A69210302D000BE4BA3 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CF1F2A69210302D000BE4BA3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2A352102C18400BE4BA3 /* SplashViewController.swift */,
+				CF1F2A372102C55B00BE4BA3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF1F2A6A210302DB00BE4BA3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F2A632102FC4F00BE4BA3 /* HomeViewController.swift */,
+				CF1F2A6B210302FE00BE4BA3 /* TaskTableViewCell.swift */,
+				CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		EF0FA5D11AF8FAB99F627D41 /* Frameworks */ = {
@@ -290,6 +335,8 @@
 				CF1F2A522102CEA500BE4BA3 /* Catamaran-Regular.ttf in Resources */,
 				CF1F2A1821029A3000BE4BA3 /* Assets.xcassets in Resources */,
 				CF1F2A1621029A2C00BE4BA3 /* Main.storyboard in Resources */,
+				CF1F2A702103039900BE4BA3 /* TaskTableViewCell.xib in Resources */,
+				CF1F2A67210300E500BE4BA3 /* mapstyle.json in Resources */,
 				CF1F2A4F2102CEA500BE4BA3 /* Catamaran-SemiBold.ttf in Resources */,
 				CF1F2A502102CEA500BE4BA3 /* Catamaran-Medium.ttf in Resources */,
 			);
@@ -367,15 +414,20 @@
 			files = (
 				CF1F2A292102BBF600BE4BA3 /* ServiceError.swift in Sources */,
 				CF1F2A272102BBCB00BE4BA3 /* Request.swift in Sources */,
+				CF1F2A642102FC4F00BE4BA3 /* HomeViewController.swift in Sources */,
 				CF1F2A622102EF5100BE4BA3 /* UIViewControllerExtension.swift in Sources */,
+				CF1F2A722103116D00BE4BA3 /* Task.swift in Sources */,
 				CF1F2A252102BBA000BE4BA3 /* Endpoint.swift in Sources */,
 				CF1F2A312102BF1000BE4BA3 /* EmptyResponse.swift in Sources */,
+				CF1F2A6E2103036500BE4BA3 /* UITableViewExtension.swift in Sources */,
 				CF1F2A5A2102D7E100BE4BA3 /* UIColor+Zeplin.swift in Sources */,
+				CF1F2A742103192B00BE4BA3 /* TasksResponse.swift in Sources */,
 				CF1F2A5C2102DA0B00BE4BA3 /* NSAttributedStringExtension.swift in Sources */,
 				CF1F2A582102D4B300BE4BA3 /* UILabelExtension.swift in Sources */,
 				CF1F2A342102C00200BE4BA3 /* User.swift in Sources */,
 				CF1F2A3E2102CD1D00BE4BA3 /* BaseViewController.swift in Sources */,
 				CF1F2A1121029A2C00BE4BA3 /* AppDelegate.swift in Sources */,
+				CF1F2A6C210302FE00BE4BA3 /* TaskTableViewCell.swift in Sources */,
 				CF1F2A2B2102BC1700BE4BA3 /* Service.swift in Sources */,
 				CF1F2A2E2102BDEF00BE4BA3 /* Global.swift in Sources */,
 				CF1F2A5E2102EDB900BE4BA3 /* UserDefaultsExtension.swift in Sources */,
@@ -530,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKG7DYD535;
 				INFOPLIST_FILE = webro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BKG7DYD535;
 				INFOPLIST_FILE = webro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -18,11 +18,11 @@ class FormTextField: SkyFloatingLabelTextField {
     private func applyStyle() {
         lineColor = .paleGrey
         selectedLineColor = .paleGrey
-        placeholderFont = UIFont.inputLabel
+        placeholderFont = UIFont.body7
         placeholderColor = UIColor.black.withAlphaComponent(0.5)
         selectedTitleColor = UIColor.black.withAlphaComponent(0.5)
         textColor = .black
-        font = UIFont.b2
+        font = UIFont.body2
         titleFormatter = { (title: String) in return title }
     }
 }

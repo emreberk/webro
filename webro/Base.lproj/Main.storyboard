@@ -118,6 +118,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="ApJ-5o-8Az"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="loginButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Aw-Mf-9nM"/>
+                                                        </connections>
                                                     </button>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spiderman yardım et, Şifremi unuttum!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5B-MD-fkT">
                                                         <rect key="frame" x="10" y="342" width="355" height="21"/>
@@ -207,9 +210,79 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="193.85307346326837"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="IEE-dQ-NTb">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="8Hy-U0-uPp" customClass="HomeViewController" customModule="webro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Xr-U1-cEg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyL-Py-kXD" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="fzV-cE-JCW"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Yardım çağrısı ara" translatesAutoresizingMaskIntoConstraints="NO" id="nUM-fe-jJe">
+                                <rect key="frame" x="0.0" y="30" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pKW-AI-2mS">
+                                <rect key="frame" x="0.0" y="300" width="375" height="367"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="1ZP-bl-kiw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yardimbg" translatesAutoresizingMaskIntoConstraints="NO" id="Pji-t6-vG8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Pji-t6-vG8" secondAttribute="bottom" id="3HN-an-NMk"/>
+                                        <constraint firstItem="Pji-t6-vG8" firstAttribute="leading" secondItem="1ZP-bl-kiw" secondAttribute="leading" id="B5D-UR-Pbf"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pji-t6-vG8" secondAttribute="trailing" id="WJg-NU-kvW"/>
+                                        <constraint firstItem="Pji-t6-vG8" firstAttribute="top" secondItem="1ZP-bl-kiw" secondAttribute="top" id="thL-ct-uhf"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Hy-U0-uPp" id="Rx8-bw-V2I"/>
+                                    <outlet property="delegate" destination="8Hy-U0-uPp" id="pwK-Uh-kOk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nUM-fe-jJe" firstAttribute="top" secondItem="tz3-97-HNG" secondAttribute="top" constant="10" id="1tW-zJ-jKV"/>
+                            <constraint firstItem="pKW-AI-2mS" firstAttribute="bottom" secondItem="tz3-97-HNG" secondAttribute="bottom" id="3I2-Gw-ZyI"/>
+                            <constraint firstItem="dyL-Py-kXD" firstAttribute="leading" secondItem="tz3-97-HNG" secondAttribute="leading" id="7D8-3o-OUf"/>
+                            <constraint firstItem="nUM-fe-jJe" firstAttribute="leading" secondItem="tz3-97-HNG" secondAttribute="leading" id="HZ6-2C-Gae"/>
+                            <constraint firstItem="pKW-AI-2mS" firstAttribute="top" secondItem="4Xr-U1-cEg" secondAttribute="top" constant="300" id="LWX-nS-WTD"/>
+                            <constraint firstItem="pKW-AI-2mS" firstAttribute="trailing" secondItem="tz3-97-HNG" secondAttribute="trailing" id="cfh-E8-z6B"/>
+                            <constraint firstItem="dyL-Py-kXD" firstAttribute="trailing" secondItem="tz3-97-HNG" secondAttribute="trailing" id="dKX-az-3Cz"/>
+                            <constraint firstItem="pKW-AI-2mS" firstAttribute="leading" secondItem="tz3-97-HNG" secondAttribute="leading" id="fQg-qh-lQ2"/>
+                            <constraint firstItem="nUM-fe-jJe" firstAttribute="trailing" secondItem="tz3-97-HNG" secondAttribute="trailing" id="nSC-0Q-K7O"/>
+                            <constraint firstItem="dyL-Py-kXD" firstAttribute="top" secondItem="4Xr-U1-cEg" secondAttribute="top" id="zVk-iE-X6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tz3-97-HNG"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="dyL-Py-kXD" id="qfA-dS-aGd"/>
+                        <outlet property="tableView" destination="pKW-AI-2mS" id="5dv-tL-cHp"/>
+                        <outlet property="tableViewTopConstraint" destination="LWX-nS-WTD" id="i6b-3g-9j7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5c-t2-Vhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="191.1544227886057"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
         <image name="logo" width="132" height="52"/>
+        <image name="yardimbg" width="375" height="49"/>
     </resources>
 </document>

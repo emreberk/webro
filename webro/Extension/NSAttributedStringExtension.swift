@@ -11,7 +11,7 @@ import UIKit
 extension NSAttributedString {
     
     convenience init(text: String?,
-                     font: UIFont = UIFont.b2,
+                     font: UIFont = UIFont.body2,
                      color: UIColor = UIColor.black,
                      kern: CGFloat = 0.3) {
         

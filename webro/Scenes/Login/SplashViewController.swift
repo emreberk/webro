@@ -10,6 +10,8 @@ import UIKit
 
 class SplashViewController: UIViewController {
     
+    // MARK: View Lifecycle
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         proceed()
@@ -19,13 +21,13 @@ class SplashViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
     }
+}
+
+// MARK: Private Helpers
+
+private extension SplashViewController {
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        navigationController?.isNavigationBarHidden = true
-    }
-    
-    private func proceed() {
+    func proceed() {
         if UserDefaults.standard.accessToken == nil {
             let loginViewController: LoginViewController = UIViewController.instantiate()
             navigationController?.pushViewController(loginViewController, animated: true)

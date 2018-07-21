@@ -10,7 +10,7 @@ import UIKit
 
 extension UILabel {
     
-    func applyStyle(font: UIFont = UIFont.b2,
+    func applyStyle(font: UIFont = UIFont.body2,
                     color: UIColor = UIColor.black,
                     kern: CGFloat = 0.3) {
         
