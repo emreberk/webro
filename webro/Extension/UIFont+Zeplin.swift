@@ -108,4 +108,8 @@ extension UIFont {
         return UIFont.systemFont(ofSize: 11.0, weight: .medium)
     }
     
+    class var distance: UIFont {
+        return UIFont(name: "Catamaran-Regular", size: 12.0)!
+    }
+    
 }

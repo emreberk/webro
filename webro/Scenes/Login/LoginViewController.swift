@@ -103,6 +103,7 @@ private extension LoginViewController {
                                           for: .normal)
         emailTextField.placeholder = "E-posta"
         passwordTextField.placeholder = "Şifre"
+        lostPasswordLabel.attributedText = lostPasswordText()
     }
     
     func applyStyling() {
@@ -111,6 +112,20 @@ private extension LoginViewController {
         formView.layer.cornerRadius = UIConstant.cornerRadius
         formView.clipsToBounds = true
         loginLabel.applyStyle(font: .heading1)
+    }
+    
+    // FIXME: Make it dynamic
+    func lostPasswordText() -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(string: "Spiderman yardım et, Şifremi unuttum!", attributes: [
+            .font: UIFont(name: "Catamaran-Regular", size: 14.0)!,
+            .foregroundColor: UIColor(red: 15.0 / 255.0, green: 5.0 / 255.0, blue: 23.0 / 255.0, alpha: 0.6),
+            .kern: 0.3
+            ])
+        attributedString.addAttributes([
+            .font: UIFont(name: "Catamaran-Medium", size: 14.0)!,
+            .foregroundColor: UIColor.black
+            ], range: NSRange(location: 21, length: 16))
+        return attributedString
     }
 }
 

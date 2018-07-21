@@ -16,11 +16,11 @@ enum TaskType: String {
     var description: String {
         switch self {
         case .auto:
-            return "Vinç"
+            return "Vinç Hizmeti"
         case .human:
-            return "İnsan"
+            return "İnsan Taşıma"
         case .package:
-            return "Paket"
+            return "Paket Servis"
         }
     }
     
@@ -32,6 +32,28 @@ enum TaskType: String {
             return #imageLiteral(resourceName: "icHuman")
         case .package:
             return #imageLiteral(resourceName: "icPackage")
+        }
+    }
+    
+    var mapIcon: UIImage {
+        switch self {
+        case .auto:
+            return #imageLiteral(resourceName: "2")
+        case .human:
+            return #imageLiteral(resourceName: "3")
+        case .package:
+            return #imageLiteral(resourceName: "1")
+        }
+    }
+    
+    var price: String {
+        switch self {
+        case .auto:
+            return "900"
+        case .human:
+            return "350"
+        case .package:
+            return "120"
         }
     }
 }
@@ -59,6 +81,7 @@ class Location: Mappable {
 
 class Task: Mappable {
     
+    var id: String?
     var user: User?
     var type: TaskType?
     var status: TaskStatus?
@@ -71,6 +94,7 @@ class Task: Mappable {
     }
     
     func mapping(map: Map) {
+        id <- map["id"]
         user <- map["user"]
         type <- map["type"]
         status <- map["status"]

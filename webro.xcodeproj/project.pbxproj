@@ -40,6 +40,7 @@
 		CF1F2A722103116D00BE4BA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A712103116D00BE4BA3 /* Task.swift */; };
 		CF1F2A742103192B00BE4BA3 /* TasksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */; };
 		CF1F2A762103320B00BE4BA3 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2A752103320B00BE4BA3 /* Loading.xcassets */; };
+		CF1F2A782103446000BE4BA3 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A772103446000BE4BA3 /* ConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		CF1F2A712103116D00BE4BA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksResponse.swift; sourceTree = "<group>"; };
 		CF1F2A752103320B00BE4BA3 /* Loading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Loading.xcassets; sourceTree = "<group>"; };
+		CF1F2A772103446000BE4BA3 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		DF592C59461F7FC8ACBEA7FF /* Pods-webro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.release.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.release.xcconfig"; sourceTree = "<group>"; };
 		EBCD7A525C98E9BDED86BF6A /* Pods-webro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1F2A632102FC4F00BE4BA3 /* HomeViewController.swift */,
+				CF1F2A772103446000BE4BA3 /* ConfirmationViewController.swift */,
 				CF1F2A6B210302FE00BE4BA3 /* TaskTableViewCell.swift */,
 				CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */,
 			);
@@ -422,6 +425,7 @@
 				CF1F2A622102EF5100BE4BA3 /* UIViewControllerExtension.swift in Sources */,
 				CF1F2A722103116D00BE4BA3 /* Task.swift in Sources */,
 				CF1F2A252102BBA000BE4BA3 /* Endpoint.swift in Sources */,
+				CF1F2A782103446000BE4BA3 /* ConfirmationViewController.swift in Sources */,
 				CF1F2A312102BF1000BE4BA3 /* EmptyResponse.swift in Sources */,
 				CF1F2A6E2103036500BE4BA3 /* UITableViewExtension.swift in Sources */,
 				CF1F2A5A2102D7E100BE4BA3 /* UIColor+Zeplin.swift in Sources */,
