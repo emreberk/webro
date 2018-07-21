@@ -30,9 +30,10 @@ private extension SplashViewController {
     func proceed() {
         if UserDefaults.standard.accessToken == nil {
             let loginViewController: LoginViewController = UIViewController.instantiate()
-            navigationController?.pushViewController(loginViewController, animated: true)
+            navigationController?.pushViewController(loginViewController, animated: false)
         } else {
-            // TODO: Proceed to main
+            let homeViewController: HomeViewController = UIViewController.instantiate()
+            navigationController?.pushViewController(homeViewController, animated: false)
         }
     }
 }

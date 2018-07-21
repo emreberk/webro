@@ -80,6 +80,10 @@ class Service {
             return (data: nil, error: ServiceError.parseFailed)
         }
         
+        if let errorMessage = json["msg"] as? String {
+            return (data: nil, error: ServiceError.service(code: 1, message: errorMessage))
+        }
+        
         return (data: json, error: nil)
     }
 }

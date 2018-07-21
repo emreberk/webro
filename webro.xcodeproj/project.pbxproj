@@ -39,6 +39,7 @@
 		CF1F2A702103039900BE4BA3 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */; };
 		CF1F2A722103116D00BE4BA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A712103116D00BE4BA3 /* Task.swift */; };
 		CF1F2A742103192B00BE4BA3 /* TasksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */; };
+		CF1F2A762103320B00BE4BA3 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1F2A752103320B00BE4BA3 /* Loading.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		CF1F2A6F2103039900BE4BA3 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		CF1F2A712103116D00BE4BA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CF1F2A732103192B00BE4BA3 /* TasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksResponse.swift; sourceTree = "<group>"; };
+		CF1F2A752103320B00BE4BA3 /* Loading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Loading.xcassets; sourceTree = "<group>"; };
 		DF592C59461F7FC8ACBEA7FF /* Pods-webro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.release.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.release.xcconfig"; sourceTree = "<group>"; };
 		EBCD7A525C98E9BDED86BF6A /* Pods-webro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-webro/Pods-webro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				CF1F2A1021029A2C00BE4BA3 /* AppDelegate.swift */,
 				CF1F2A1421029A2C00BE4BA3 /* Main.storyboard */,
 				CF1F2A1721029A3000BE4BA3 /* Assets.xcassets */,
+				CF1F2A752103320B00BE4BA3 /* Loading.xcassets */,
 				CF1F2A1921029A3000BE4BA3 /* LaunchScreen.storyboard */,
 				CF1F2A1C21029A3000BE4BA3 /* Info.plist */,
 			);
@@ -331,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1F2A762103320B00BE4BA3 /* Loading.xcassets in Resources */,
 				CF1F2A1B21029A3000BE4BA3 /* LaunchScreen.storyboard in Resources */,
 				CF1F2A522102CEA500BE4BA3 /* Catamaran-Regular.ttf in Resources */,
 				CF1F2A1821029A3000BE4BA3 /* Assets.xcassets in Resources */,

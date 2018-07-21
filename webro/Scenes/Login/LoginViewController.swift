@@ -40,6 +40,36 @@ class LoginViewController: BaseViewController {
     override func keyboardWillHide(keyboardHeight: CGFloat, duration: Double) {
         scrollView.contentInset.bottom = 0
     }
+    
+    // MARK: - Network
+    
+    private func login() {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            showLoading(false)
+            return
+        }
+        
+        Service.main.request(.login(email: email, password: password)) { [weak self] (t: User?, error) in
+            
+            guard let strongSelf = self else {
+                return
+            }
+            
+            strongSelf.showLoading(false)
+            
+            guard let user = t else {
+                if let errorMessage = error?.message {
+                    strongSelf.showMessage(errorMessage)
+                }
+                return
+            }
+            
+            User.current = user
+            let homeViewController: HomeViewController = UIViewController.instantiate()
+            strongSelf.navigationController?.pushViewController(homeViewController, animated: true)
+        }
+    }
+    
 }
 
 // MARK: Actions
@@ -47,8 +77,10 @@ class LoginViewController: BaseViewController {
 private extension LoginViewController {
     
     @IBAction func loginButtonTapped() {
-        let homeViewController: HomeViewController = UIViewController.instantiate()
-        navigationController?.pushViewController(homeViewController, animated: true)
+        showLoading(true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.login()
+        }
     }
 }
 
