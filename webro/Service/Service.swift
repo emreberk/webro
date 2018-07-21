@@ -20,7 +20,7 @@ class Service {
     
     private init() {}
     
-    private let baseURL = URL(string: "http://192.168.30.233:8081/api/")!//!webro.herokuapp.com/api/")!
+    private let baseURL = URL(string: "https://webro.herokuapp.com/api/")!
     private let defaultParameters: [String : Any] = [:]
     private let defaultHeaders: [String : String] = [:]
     
